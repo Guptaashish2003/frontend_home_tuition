@@ -1,0 +1,30 @@
+.ver-container {
+    max-width: 518px !important;
+    width: 90% !important;
+}
+
+.verify-content  {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.verify-content h1 {
+    font-size: x-large;
+    font-family: "Poppins-SemiBold";
+}
+
+.verify-content div {
+    font-family: "Poppins-regular";
+    font-size: small;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #99fd7e42;
+}
+
+.fa-check-circle {
+    color: seagreen;
+}

@@ -1,0 +1,116 @@
+.profile-up-container {
+    margin: 0;
+    padding-top: 40px;
+    color: #2e323c;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    min-height: calc(100vh - 75px);
+}
+.account-settings .user-profile {
+    margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: "Poppins-Regular";
+}
+.account-settings .user-profile .user-avatar {
+    margin: 0 0 1rem 0;
+}
+.account-settings .user-profile .user-avatar img {
+    width: 90px;
+    height: 90px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+.account-settings .user-profile h5.user-name {
+    margin: 0 0 0.5rem 0;
+}
+.account-settings .user-profile h6.user-email {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #9fa8b9;
+}
+.account-settings .about {
+    margin: 1rem 0 0 0;
+    text-align: center;
+}
+.account-settings .about h5 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-family: "Poppins-SemiBold";
+}
+.account-settings .about p {
+    font-size: 0.825rem;
+    font-family: 'Oswald', sans-serif;
+}
+.up-form-container{
+    width: 100%;
+    height: 100%;
+}
+.profile-body{
+    width: 25%;
+    min-width: 250px !important;
+}
+.avatar-input{
+position: relative;
+}
+.avatar-input::before{
+    content: "Select Your Avatar";
+    position: absolute;
+    top: 0%;
+    right: 12px;
+    color: #333333a6;
+    font-family: "Poppins-regular";
+    font-size: 13px;
+
+}
+.resume-input{
+position: relative;
+}
+.resume-input::before{
+    content: "Select Your resume";
+    position: absolute;
+    top: 0%;
+    right: 12px;
+    color: #333333a6;
+    font-family: "Poppins-regular";
+    font-size: 13px;
+
+}
+
+.radio-btn{
+    color: #333;
+    font-family: "Poppins-regular";
+    font-size: 13px;  
+}
+.radio-btn label{
+    padding-left: 4px; 
+}
+.changePass-btn{
+    width: 90% !important;
+    margin-top: 0px ;
+    height: 38px !important;
+}
+.fix-pass-btn{
+    margin-bottom: 0px;
+}
+.profile-about div{
+    font-size: 13px;
+    
+}
+.profile-about div span{
+    color: #3b3c3ddc;
+
+}
+
+@media only screen and (max-width: 915px)  {
+   .profile-up-container{
+    flex-direction: column;
+   }
+   .profile-body{
+    width: 100%;
+    min-width: none;
+   }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "proxy":"http://54.242.19.240:4000/api/v1",
+  "scripts": {
+    "dev": "vite",
+    "mob": "vite --host",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.16",
+    "@heroicons/react": "^2.0.18",
+    "@syncfusion/ej2": "^19.4.56",
+    "@syncfusion/ej2-react-calendars": "^19.4.56",
+    "@syncfusion/ej2-react-charts": "^19.4.54",
+    "@syncfusion/ej2-react-dropdowns": "^19.4.56",
+    "@syncfusion/ej2-react-grids": "^19.4.56",
+    "@syncfusion/ej2-react-inputs": "^19.4.52",
+    "@syncfusion/ej2-react-kanban": "^19.4.52",
+    "@syncfusion/ej2-react-popups": "^19.4.53",
+    "@syncfusion/ej2-react-richtexteditor": "^19.4.56",
+    "@syncfusion/ej2-react-schedule": "^19.4.55",
+    "axios": "^1.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-router-dom": "^6.14.2",
+    "react-select": "^5.7.4",
+    "react-slick": "^0.29.0",
+    "react-toastify": "^9.1.3",
+    "slick-carousel": "^1.8.1",
+    "tailwindcss-all": "^0.0.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.4",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.5"
+  }
+}

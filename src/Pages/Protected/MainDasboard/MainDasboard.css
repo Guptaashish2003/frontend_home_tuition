@@ -1,0 +1,259 @@
+
+.wel-logo{
+    width: 100px;
+    height: 100px;
+}
+.wel-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.das-btn{
+    margin-top: 20px !important;
+}
+.das-container h1{
+    font-family: "Poppins-SemiBold";
+    color: #333; 
+}
+.das-container p{
+    font-size: 13px;
+    color: #201e1e9a;
+font-family: "Poppins-Regular";
+
+}
+
+
+
+
+
+
+@keyframes slidein {
+    0% {
+        top: -400px;
+        opacity: 0;
+   }
+    100% {
+        opacity: 1;
+        top: 0px;
+   }
+}
+@keyframes slideout {
+    0% {
+        top: 0;
+        opacity: 1;
+   }
+    100% {
+        top: -400px;
+        opacity: 0;
+   }
+}
+
+.main-container {
+    background: #eee;
+    font-family: "Tahoma";
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.main-container #scene {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    overflow: hidden;
+}
+.main-container #scene #left-zone {
+    background: #ffffff;
+    height: 100%;
+    max-width: 248px;
+    width: 30%;
+    margin-top: 35px;
+    border-right: 2px solid #29272750;
+
+}
+.main-container #scene #left-zone .list {
+    list-style: none;
+}
+.main-container #scene #left-zone .list li.item input[type="radio"] {
+    display: none;
+}
+.main-container #scene #left-zone .list li.item input[type="radio"] ~ label {
+    display: block;
+    opacity: 0.5;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.main-container #scene #left-zone .list li.item input[type="radio"] ~ label:first-letter {
+    text-transform: uppercase;
+}
+.main-container #scene #left-zone .list li.item input[type="radio"] ~ label:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+.main-container #scene #left-zone .list li.item input[type="radio"] ~ label.dash-icon:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 4px;
+    background-image: url('../../../assets/dashboard.png');
+    background-position: center;
+    background-size: 75% 75%;
+    background-repeat: no-repeat;
+
+}
+.main-container #scene #left-zone .list li.item input[type="radio"] ~ label.book-icon:before {
+    content: " ";
+    display: flex;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 4px;
+    background-image: url('../../../assets/appointment.png');
+    background-position: center;
+    background-size: 75% 75%;
+    background-repeat: no-repeat;
+}
+
+.main-container #scene #left-zone .list li.item input[type="radio"] ~ .content {
+    position: absolute;
+    left: 30%;
+    top: -533px;
+    width: calc(100% - 30%);
+    height: 90%;
+    animation-duration: 0.75s;
+    animation-name: slideout;
+    animation-timing-function: ease-out;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+/* banana */
+.main-container #scene #left-zone .list li.item input[type="radio"] ~ .content.content_banana .picto {
+    height: 100px;
+    width: 100px;
+    background-image: url('https://d30y9cdsu7xlg0.cloudfront.net/png/53209-200.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-container #scene #left-zone .list li.item input[type="radio"] ~ .content.content_banana h1 {
+    color: #f5d76e;
+}
+
+
+.main-container #scene #left-zone .list li.item input[type="radio"]:checked ~ label {
+    opacity: 1;
+    animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.main-container #scene #left-zone .list li.item input[type="radio"]:checked ~ label.middle-slider {
+    color: #f5d76e;
+    border-right: solid 4px #f5d76e;
+}
+
+
+.main-container #scene #left-zone .list li.item input[type="radio"]:checked ~ .content {
+    animation-duration: 0.75s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.booking-pending{
+    justify-content: start !important;
+    flex-direction: row !important;
+    align-items: start !important;
+    
+    
+}
+/* .booking-pending {
+ display: flex;
+ justify-content: space-between;
+} */
+.pending-order-container{
+ width: 100%;
+ margin-bottom: 10px;
+}
+/* toggle option  */
+.dropdown-dashboard {
+    position: absolute;
+    top: 6px;
+    left: 20px;
+  }
+  
+  .dropdown-dashboard-button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: Poppins-Regular ;
+    background-color: #333;
+  }
+  
+  .dropdown-dashboard-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: block;
+    font-family: Poppins-Regular ;
+    background-color: #333;
+    color: white;
+  }
+  
+  .dropdown-dashboard-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-dashboard-item:hover {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  .dash-teacher-card{
+    margin: 10px auto;
+  }
+
+@media screen and (max-width: 620px) {
+
+    .middle-slider span {
+        visibility: hidden;
+    }
+    .main-container #scene #left-zone .list li.item input[type="radio"] ~ .content {
+        left: 9%;
+        width: 85%;
+        text-align: center;
+    }
+    .main-container #scene #left-zone{
+        width: 0px;
+    }
+
+ 
+
+}
+

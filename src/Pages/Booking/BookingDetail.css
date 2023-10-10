@@ -1,0 +1,36 @@
+.card {
+    background-color: #fff7ed;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+    cursor: auto;
+
+
+  }
+  .card-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .details {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .status {
+    font-size: 14px;
+    color: rgb(255, 72, 0);
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .contact {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .BookingDetails-panel{
+    row-gap: 2px !important;
+  }

@@ -1,0 +1,52 @@
+.search-fill {
+    border: 1px solid #c4c4c4;
+    width: 60%;
+    overflow-x: hidden;
+    display: flex;
+    border-radius: 50px;
+    font-size: 18px;
+    height: 65px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    margin: 10px auto;
+}
+.search-fill input {
+    width: 70%;
+    height: 90%;
+    border: none;
+    padding: 8px 20px;
+    outline: none;
+    font-size: 18px;
+}
+
+.button-src {
+    border-radius: 50px;
+    border: none;
+    background-color: #f1c50e;
+    color: #fff;
+    font-size: 18px;
+    width: 30%;
+    height: 80%;
+}
+
+@media screen and (max-width: 631px) {
+.search-fill{
+    height: 45px;
+    width: 80%;
+}
+.search-fill input{
+    font-size: 80%;
+}
+.button-src span{
+    display: none;
+}
+
+}
+@media screen and (max-width: 360px) {
+
+    .search-fill input {
+      font-size: 70%;
+    }
+
+}
